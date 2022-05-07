@@ -1,2 +1,1 @@
-# THDL-Pr
-oject
+# THDL-Project
