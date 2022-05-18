@@ -11,7 +11,7 @@ def get_phone(page):
 def extract_reviews():
     yield {'name': 'name', 'storage': 'storage', 'display_size': 'display_size',
      'price': 'price', 'final_price': 'price', 'stock_available': 'stock_available', 'url': 'url'  }
-    for i in range(1, 10):
+    for i in range(1, 50):
         yield from requests.get(get_phone(i)).json()
 
 def transform_reviews(*args):
