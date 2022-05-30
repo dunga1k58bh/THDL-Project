@@ -11,10 +11,10 @@ def get_phone(page):
 def extract_phones():
     yield {'name': 'name', 'storage': 'storage', 'display_size': 'display_size',
      'price': 'price', 'final_price': 'price', 'stock_available': 'stock_available', 'url': 'url'  }
-    for i in range(1, 50):
+    for i in range(1, 30):
         yield from requests.get(get_phone(i)).json()
 
-def transform_phones(*args):
+def transform_reviews(*args):
     """Placeholder, change, rename, remove... """
     if (args[0]['final_price']):
         price = args[0]['final_price']
@@ -29,18 +29,18 @@ def transform_phones(*args):
         args[0]['url']
     ]
 
-def load_phones(*args):
+def load_reviews(*args):
     """Placeholder, change, rename, remove... """
     with open("cellphones.csv" , "a") as f:
-        csv_out = csv.writer(f)
+        csv_out = csv.writer(f, delimiter=";")
         csv_out.writerow(list(args[0]))
 
 def get_graph(**options):
     graph = bonobo.Graph()
     graph.add_chain(
         extract_phones,
-        transform_phones,
-        load_phones,
+        transform_reviews,
+        load_reviews,
     )
     return graph
 
