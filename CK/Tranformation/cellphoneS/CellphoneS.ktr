@@ -436,11 +436,11 @@
   <notepads>
   </notepads>
   <connection>
-    <name>warehouse_phones</name>
+    <name>cellphones</name>
     <server>localhost</server>
     <type>MYSQL</type>
     <access>Native</access>
-    <database>warehouse_phones</database>
+    <database>cellphones</database>
     <port>3306</port>
     <username>root</username>
     <password>Encrypted 2be98afc86aa7f2e4cb79ce71da9fa6d4</password>
@@ -770,313 +770,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>112</xloc>
+      <xloc>48</xloc>
       <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Row normaliser</name>
-    <type>Normaliser</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <typefield>source</typefield>
-    <fields>
-      <field>
-        <name>Kích thước màn hình</name>
-        <value>cellphoneS</value>
-        <norm>display_size</norm>
-      </field>
-      <field>
-        <name>Công nghệ màn hình</name>
-        <value>cellphoneS</value>
-        <norm>display_tech</norm>
-      </field>
-      <field>
-        <name>Camera sau</name>
-        <value>cellphoneS</value>
-        <norm>camera</norm>
-      </field>
-      <field>
-        <name>Camera trước</name>
-        <value>cellphoneS</value>
-        <norm>front_camera</norm>
-      </field>
-      <field>
-        <name>Dung lượng RAM</name>
-        <value>cellphoneS</value>
-        <norm>ram</norm>
-      </field>
-      <field>
-        <name>Bộ nhớ trong</name>
-        <value>cellphoneS</value>
-        <norm>rom</norm>
-      </field>
-      <field>
-        <name>Pin</name>
-        <value>cellphoneS</value>
-        <norm>batery</norm>
-      </field>
-      <field>
-        <name>Thẻ SIM</name>
-        <value>cellphoneS</value>
-        <norm>sim</norm>
-      </field>
-      <field>
-        <name>Hệ điều hành</name>
-        <value>cellphoneS</value>
-        <norm>os</norm>
-      </field>
-      <field>
-        <name>Độ phân giải màn hình</name>
-        <value>cellphoneS</value>
-        <norm>resolution</norm>
-      </field>
-      <field>
-        <name>Tính năng màn hình</name>
-        <value>cellphoneS</value>
-        <norm>display_feature</norm>
-      </field>
-      <field>
-        <name>Loại CPU</name>
-        <value>cellphoneS</value>
-        <norm>cpu_type</norm>
-      </field>
-      <field>
-        <name>Trọng lượng</name>
-        <value>cellphoneS</value>
-        <norm>weight</norm>
-      </field>
-      <field>
-        <name>Tần số quét</name>
-        <value>cellphoneS</value>
-        <norm>hz</norm>
-      </field>
-      <field>
-        <name>Chipset</name>
-        <value>cellphoneS</value>
-        <norm>chip_set</norm>
-      </field>
-      <field>
-        <name>Bluetooth</name>
-        <value>cellphoneS</value>
-        <norm>blue_tooth</norm>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>224</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>S3 file output</name>
-    <type>S3FileOutputPlugin</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <separator>;</separator>
-    <enclosure>"</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>Y</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding/>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name>/home/iloveu/BK_bat_diet/20212/THDL/BTL/Project/THDL-Project/CK/res/cellphoneS_nomalize</name>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
-      <extention>csv</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery>0</splitevery>
-    </file>
-    <fields>
-    </fields>
-    <access_key>Encrypted </access_key>
-    <secret_key>Encrypted </secret_key>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>640</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sort rows</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>url</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>336</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Unique rows</name>
-    <type>Unique</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <count_rows>N</count_rows>
-    <count_field/>
-    <reject_duplicate_row>N</reject_duplicate_row>
-    <error_description/>
-    <fields>
-      <field>
-        <name>url</name>
-        <case_insensitive>Y</case_insensitive>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>480</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>create cellphones</name>
-    <type>ExecSQL</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>warehouse_phones</connection>
-    <execute_each_row>N</execute_each_row>
-    <single_statement>N</single_statement>
-    <replace_variables>N</replace_variables>
-    <quoteString>N</quoteString>
-    <sql>create table if not exists cellphones (
-	id int AUTO_INCREMENT PRIMARY KEY,
-	name varchar(255),
-	price varchar(255),
-	url text,
-	source text, 
-	display_size text,
-	display_tech text, 
-	camera text,
-	front_camera text, 
-	chipset text,
-	ram text,
-	rom text,
-	batery text,
-	sim text,
-	os text,
-	resolution text,
-	display_feature text,
-	cpu_type text,
-	weight text,
-	bluetooth text,
-	hz text
-);
-</sql>
-    <set_params>N</set_params>
-    <insert_field/>
-    <update_field/>
-    <delete_field/>
-    <read_field/>
-    <arguments>
-    </arguments>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>96</xloc>
-      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1091,129 +786,15 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>warehouse_phones</connection>
+    <connection>cellphones</connection>
     <commit>100</commit>
     <update_bypassed>N</update_bypassed>
     <lookup>
-      <schema>warehouse_phones</schema>
+      <schema>cellphones</schema>
       <table>cellphones</table>
       <key>
         <name>name</name>
         <field>name</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>price</name>
-        <field>price</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>url</name>
-        <field>url</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>source</name>
-        <field>source</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>display_size</name>
-        <field>display_size</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>display_tech</name>
-        <field>display_tech</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>camera</name>
-        <field>camera</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>front_camera</name>
-        <field>front_camera</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>ram</name>
-        <field>ram</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>rom</name>
-        <field>rom</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>batery</name>
-        <field>batery</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>sim</name>
-        <field>sim</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>os</name>
-        <field>os</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>resolution</name>
-        <field>resolution</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>display_feature</name>
-        <field>display_feature</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>cpu_type</name>
-        <field>cpu_type</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>weight</name>
-        <field>weight</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>hz</name>
-        <field>hz</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>chip_set</name>
-        <field>chipset</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>blue_tooth</name>
-        <field>bluetooth</field>
         <condition>=</condition>
         <name2/>
       </key>
@@ -1327,8 +908,313 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>480</xloc>
-      <yloc>208</yloc>
+      <xloc>432</xloc>
+      <yloc>176</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Row normaliser</name>
+    <type>Normaliser</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <typefield>source</typefield>
+    <fields>
+      <field>
+        <name>Kích thước màn hình</name>
+        <value>cellphoneS</value>
+        <norm>display_size</norm>
+      </field>
+      <field>
+        <name>Công nghệ màn hình</name>
+        <value>cellphoneS</value>
+        <norm>display_tech</norm>
+      </field>
+      <field>
+        <name>Camera sau</name>
+        <value>cellphoneS</value>
+        <norm>camera</norm>
+      </field>
+      <field>
+        <name>Camera trước</name>
+        <value>cellphoneS</value>
+        <norm>front_camera</norm>
+      </field>
+      <field>
+        <name>Dung lượng RAM</name>
+        <value>cellphoneS</value>
+        <norm>ram</norm>
+      </field>
+      <field>
+        <name>Bộ nhớ trong</name>
+        <value>cellphoneS</value>
+        <norm>rom</norm>
+      </field>
+      <field>
+        <name>Pin</name>
+        <value>cellphoneS</value>
+        <norm>batery</norm>
+      </field>
+      <field>
+        <name>Thẻ SIM</name>
+        <value>cellphoneS</value>
+        <norm>sim</norm>
+      </field>
+      <field>
+        <name>Hệ điều hành</name>
+        <value>cellphoneS</value>
+        <norm>os</norm>
+      </field>
+      <field>
+        <name>Độ phân giải màn hình</name>
+        <value>cellphoneS</value>
+        <norm>resolution</norm>
+      </field>
+      <field>
+        <name>Tính năng màn hình</name>
+        <value>cellphoneS</value>
+        <norm>display_feature</norm>
+      </field>
+      <field>
+        <name>Loại CPU</name>
+        <value>cellphoneS</value>
+        <norm>cpu_type</norm>
+      </field>
+      <field>
+        <name>Trọng lượng</name>
+        <value>cellphoneS</value>
+        <norm>weight</norm>
+      </field>
+      <field>
+        <name>Tần số quét</name>
+        <value>cellphoneS</value>
+        <norm>hz</norm>
+      </field>
+      <field>
+        <name>Chipset</name>
+        <value>cellphoneS</value>
+        <norm>chip_set</norm>
+      </field>
+      <field>
+        <name>Bluetooth</name>
+        <value>cellphoneS</value>
+        <norm>blue_tooth</norm>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>160</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>S3 file output</name>
+    <type>S3FileOutputPlugin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>/home/iloveu/BK_bat_diet/20212/THDL/BTL/Project/THDL-Project/CK/res/cellphoneS_nomalize</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+    </fields>
+    <access_key>Encrypted </access_key>
+    <secret_key>Encrypted </secret_key>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>url</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Unique rows</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <count_rows>N</count_rows>
+    <count_field/>
+    <reject_duplicate_row>N</reject_duplicate_row>
+    <error_description/>
+    <fields>
+      <field>
+        <name>url</name>
+        <case_insensitive>Y</case_insensitive>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>432</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>create cellphones</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>cellphones</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>create table if not exists cellphones (
+	id int AUTO_INCREMENT PRIMARY KEY,
+	name varchar(255),
+	price varchar(255),
+	url text,
+	source text, 
+	display_size text,
+	display_tech text, 
+	camera text,
+	front_camera text, 
+	chipset text,
+	ram text,
+	rom text,
+	batery text,
+	sim text,
+	os text,
+	resolution text,
+	display_feature text,
+	cpu_type text,
+	weight text,
+	bluetooth text,
+	hz text
+);
+</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>48</xloc>
+      <yloc>16</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
