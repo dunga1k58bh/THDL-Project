@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>to_warehouse</name>
+    <name>sendo</name>
     <description/>
     <extended_description/>
     <trans_version/>
     <trans_type>Normal</trans_type>
-    <directory>/</directory>
+    <directory>/Tranformation/sendo</directory>
     <parameters>
     </parameters>
     <log>
@@ -427,9 +426,9 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2022/06/11 15:02:45.834</created_date>
+    <created_date>2022/06/12 13:06:17.542</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2022/06/11 15:02:45.834</modified_date>
+    <modified_date>2022/06/12 13:06:50.369</modified_date>
     <key_for_session_key/>
     <is_key_private>N</is_key_private>
   </info>
@@ -437,39 +436,6 @@
   </notepads>
   <order>
   </order>
-  <step>
-    <name>Table input</name>
-    <type>TableInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection/>
-    <sql>SELECT &lt;values> FROM &lt;table name> WHERE &lt;conditions></sql>
-    <limit>0</limit>
-    <lookup/>
-    <execute_each_row>N</execute_each_row>
-    <variables_active>N</variables_active>
-    <lazy_conversion_active>N</lazy_conversion_active>
-    <cached_row_meta_active>N</cached_row_meta_active>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>96</xloc>
-      <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
   <step_error_handling>
   </step_error_handling>
   <slave-step-copy-partition-distribution>

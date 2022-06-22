@@ -1,0 +1,1 @@
+name; price; url; Kích thước màn hình; Công nghệ màn hình; Camera sau; Camera trước; Chipset; Dung lượng RAM; Bộ nhớ trong; Pin; Thẻ SIM; Hệ điều hành; Độ phân giải màn hình; Tính năng màn hình; Loại CPU; Trọng lượng; Bluetooth; Tần số quét

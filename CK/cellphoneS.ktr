@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>CellphoneS</name>
+    <name>cellphoneS</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -427,9 +426,9 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2022/06/10 21:23:57.873</created_date>
+    <created_date>2022/06/12 11:29:48.007</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2022/06/10 21:23:57.873</modified_date>
+    <modified_date>2022/06/22 21:45:20.441</modified_date>
     <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
@@ -516,12 +515,12 @@
     </hop>
     <hop>
       <from>Unique rows</from>
-      <to>S3 file output</to>
+      <to>Insert / update</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Unique rows</from>
-      <to>Insert / update</to>
+      <to>S3 file output</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -536,7 +535,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>/home/iloveu/BK_bat_diet/20212/THDL/BTL/Project/THDL-Project/GK/Bonobo/cellphones.csv</filename>
+    <filename>${project_path}/res/cellphones.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -770,8 +769,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>48</xloc>
-      <yloc>96</yloc>
+      <xloc>144</xloc>
+      <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -908,8 +907,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>432</xloc>
-      <yloc>176</yloc>
+      <xloc>569</xloc>
+      <yloc>343</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1016,8 +1015,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>160</xloc>
-      <yloc>96</yloc>
+      <xloc>297</xloc>
+      <yloc>263</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1046,7 +1045,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>/home/iloveu/BK_bat_diet/20212/THDL/BTL/Project/THDL-Project/CK/res/cellphoneS_nomalize</name>
+      <name>${project_path}/res/cellphoneS_nomalize</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>Y</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -1054,7 +1053,7 @@
       <split>N</split>
       <haspartno>N</haspartno>
       <add_date>N</add_date>
-      <add_time>N</add_time>
+      <add_time>Y</add_time>
       <SpecifyFormat>N</SpecifyFormat>
       <date_time_format/>
       <add_to_result_filenames>Y</add_to_result_filenames>
@@ -1075,8 +1074,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>560</xloc>
-      <yloc>96</yloc>
+      <xloc>697</xloc>
+      <yloc>263</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1117,8 +1116,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>288</xloc>
-      <yloc>96</yloc>
+      <xloc>425</xloc>
+      <yloc>263</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1152,13 +1151,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>432</xloc>
-      <yloc>96</yloc>
+      <xloc>569</xloc>
+      <yloc>263</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>create cellphones</name>
+    <name>create cellphones schema</name>
     <type>ExecSQL</type>
     <description/>
     <distribute>Y</distribute>
@@ -1213,8 +1212,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>48</xloc>
-      <yloc>16</yloc>
+      <xloc>185</xloc>
+      <yloc>183</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
