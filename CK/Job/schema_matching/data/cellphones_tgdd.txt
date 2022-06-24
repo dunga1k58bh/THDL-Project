@@ -1,0 +1,16 @@
+COMA_INSTANCE_MATCHING
+
+(('cellphones', 'name'), ('tgdd', 'name')):  0.74193275:
+(('cellphones', 'price'), ('tgdd', 'price')):  0.6464185:
+(('cellphones', 'Công nghệ màn hình'), ('tgdd', 'Màn hình')):  0.5609006:
+(('cellphones', 'Camera sau'), ('tgdd', 'Camera sau')):  0.78176945:
+(('cellphones', 'Camera trước'), ('tgdd', 'Camera trước')):  0.80766356:
+(('cellphones', 'Chipset'), ('tgdd', 'Chip')):  0.5881884:
+(('cellphones', 'Dung lượng RAM'), ('tgdd', 'RAM')):  0.53753483:
+(('cellphones', 'Bộ nhớ trong'), ('tgdd', 'Bộ nhớ trong')):  0.8585973:
+(('cellphones', 'Pin'), ('tgdd', 'Pin')):  0.6758837:
+(('cellphones', 'Thẻ SIM'), ('tgdd', 'SIM')):  0.5415913:
+(('cellphones', 'Hệ điều hành'), ('tgdd', 'Hệ điều hành')):  0.81365263:
+(('cellphones', 'Trọng lượng'), ('tgdd', 'Hãng')):  0.29221097:
+
+
