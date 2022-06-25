@@ -1,18 +1,21 @@
 create table if not exists phone(
     id int primary key auto_increment,
-    name varchar(127),
-
+    name varchar(255),
     data text,
-
-    color varchar(255),
-    display text,
-    ram varchar(255),
-    rom varchar(255),
-    chip text,
-    operation_system text,
+    display_size int,
+    display_tech text,
     camera text,
-    camera_selfle text,
-    battery int,
-    weight int
-
+    camera_selfie text,
+    ram int,
+    rom int,
+    batery int,
+    sim text,
+    operating_system text,
+    resolution text,
+    display_feature text,
+    cpu_type text,
+    weight text,
+    monitor_frequency int,
+    cpu text,
+    blue_tooth text
 );

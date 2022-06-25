@@ -1,0 +1,6 @@
+(('cellphones', 'price'), ('nk', 'now_price')):  0.31376296:
+(('cellphones', 'price'), ('nk', 'old_price')):  0.31376296:
+(('cellphones', 'url'), ('nk', 'label')):  0.13125205:
+(('cellphones', 'url'), ('nk', 'link')):  0.13196695:
+(('cellphones', 'Chipset'), ('nk', 'currency')):  0.06912986:
+(('cellphones', 'Pin'), ('nk', 'description')):  0.11071924:
