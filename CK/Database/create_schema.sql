@@ -13,5 +13,7 @@ create table if not exists phone(
     camera text,
     camera_selfle text,
     battery int,
-    weight int
+    weight int,
+    img text,
+    hz text,
 );
