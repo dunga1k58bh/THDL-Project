@@ -1,0 +1,15 @@
+hhm;schema
+name;name
+price;data.price
+url;data.url
+Màn hình rộng;display_size
+Công nghệ màn hình;display_tech
+Độ phân giải;camera
+RAM;ram
+Dung lượng pin;batery
+Số khe sim;sim
+Hệ điều hành;operating_system
+Chip xử lý (CPU);cpu
+image;image
+
+

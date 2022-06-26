@@ -1,11 +1,12 @@
-(('cellphones', 'name'), ('hhm', 'name')):  0.6760145:
-(('cellphones', 'price'), ('hhm', 'price')):  0.60120034:
-(('cellphones', 'url'), ('hhm', 'url')):  0.6090428:
-(('cellphones', 'Kích thước màn hình'), ('hhm', 'Màn hình rộng')):  0.44824648:
-(('cellphones', 'Công nghệ màn hình'), ('hhm', 'Công nghệ màn hình')):  0.8497235:
-(('cellphones', 'Chipset'), ('hhm', 'Chip xử lý (CPU)')):  0.3755818:
-(('cellphones', 'Dung lượng RAM'), ('hhm', 'Dung lượng pin')):  0.4986635:
-(('cellphones', 'Bộ nhớ trong'), ('hhm', 'Bộ nhớ trong (ROM)')):  0.7126559:
-(('cellphones', 'Thẻ SIM'), ('hhm', 'Số khe sim')):  0.47154698:
-(('cellphones', 'Hệ điều hành'), ('hhm', 'Hệ điều hành')):  0.78908986:
-(('cellphones', 'Độ phân giải màn hình'), ('hhm', 'Độ phân giải')):  0.56513846:
+(('cellphones', 'name'), ('hhm', 'name')):  0.6969204:
+(('cellphones', 'price'), ('hhm', 'price')):  0.6051565:
+(('cellphones', 'url'), ('hhm', 'url')):  0.63137645:
+(('cellphones', 'display_size'), ('hhm', 'Màn hình rộng')):  0.27010563:
+(('cellphones', 'display_tech'), ('hhm', 'Công nghệ màn hình')):  0.34702307:
+(('cellphones', 'camera'), ('hhm', 'Độ phân giải')):  0.2600978:
+(('cellphones', 'camera'), ('hhm', 'Độ phân giải_1')):  0.25759977:
+(('cellphones', 'ram'), ('hhm', 'RAM')):  0.7827282:
+(('cellphones', 'batery'), ('hhm', 'Dung lượng pin')):  0.2804937:
+(('cellphones', 'sim'), ('hhm', 'Số khe sim')):  0.5605839:
+(('cellphones', 'os'), ('hhm', 'Hệ điều hành')):  0.28952983:
+(('cellphones', 'chip_set'), ('hhm', 'Chip xử lý (CPU)')):  0.40695763:
