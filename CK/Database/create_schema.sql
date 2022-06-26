@@ -8,7 +8,7 @@ create table if not exists phone(
     camera_selfie text,
     ram int,
     rom int,
-    batery int,
+    battery int,
     sim text,
     operating_system text,
     resolution text,
@@ -17,5 +17,6 @@ create table if not exists phone(
     weight text,
     monitor_frequency int,
     cpu text,
-    blue_tooth text
+    bluetooth text,
+    img text,
 );

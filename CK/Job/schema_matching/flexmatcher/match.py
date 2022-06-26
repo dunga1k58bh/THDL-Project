@@ -32,7 +32,7 @@ print(fm.meta_model)
 
 #Predict maping schema
 
-predict_path = os.path.join(path, "sendo.csv")
+predict_path = os.path.join(path, "hhm.csv")
 predict_df = pd.read_csv(predict_path, sep=';')
 print(predict_df)
 predict_df = predict_df.astype(str)
