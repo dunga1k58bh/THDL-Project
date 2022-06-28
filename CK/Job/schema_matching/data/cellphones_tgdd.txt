@@ -1,5 +1,3 @@
-COMA_INSTANCE_MATCHING
-
 (('cellphones', 'name'), ('tgdd', 'name')):  0.74193275:
 (('cellphones', 'price'), ('tgdd', 'price')):  0.6464185:
 (('cellphones', 'Công nghệ màn hình'), ('tgdd', 'Màn hình')):  0.5609006:
