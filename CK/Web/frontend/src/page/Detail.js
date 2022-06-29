@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import "./detail.scss";
@@ -11,9 +11,8 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import { useNavigate } from "react-router-dom";
-
-
+import { useNavigate,useParams } from "react-router-dom";
+import * as axios from "axios";
 
 const rows = [
   {
@@ -28,6 +27,14 @@ const rows = [
 
 function Detail() {
   const navigate = useNavigate();
+  const {id} = useParams();
+  const [data, setData] = useState({})
+  useEffect(() => {
+    axios.get(`http://localhost:3001/phone/${id}`).then((res) => {
+      setData(res.data.result);
+      console.log(res.data.result);
+    });
+  },[])
   return (
     <>
       <Header />
@@ -37,32 +44,76 @@ function Detail() {
           <div className="back-text">Quay lại</div>
         </div>
         <div className="title-product">
-          <div>Iphone 8</div>
+          <div>{data.name}</div>
         </div>
         <div className="product">
           <div className="image">
-            <img className="img" src={Images.noImage} alt=""></img>
+            <img className="img" src={data.image} alt=""></img>
           </div>
           <div className="info">
             <div className="info-row">
               <div className="name">Hệ điều hành</div>
-              <div className="value">IOS</div>
+              <div className="value">{data.operating_system}</div>
             </div>
             <div className="info-row">
               <div className="name">RAM</div>
-              <div className="value">2GB</div>
+              <div className="value">{data.ram} GB</div>
             </div>
             <div className="info-row">
               <div className="name">ROM</div>
-              <div className="value">32GB</div>
+              <div className="value">{data.rom} GB</div>
             </div>
             <div className="info-row">
-              <div className="name">Màn hình</div>
-              <div className="value">OLED</div>
+              <div className="name">Loại màn hình</div>
+              <div className="value">{data.display_tech}</div>
+            </div>
+            <div className="info-row">
+              <div className="name">Kích thước màn hình</div>
+              <div className="value">{data.display_size} inch</div>
+            </div>
+            <div className="info-row">
+              <div className="name">Độ phân giải</div>
+              <div className="value">{data.resolution}</div>
+            </div>
+            <div className="info-row">
+              <div className="name">Tần số quét</div>
+              <div className="value">{data.monitor_frequency} Hz</div>
+            </div>
+            <div className="info-row">
+              <div className="name">Loại CPU</div>
+              <div className="value">{data.cpu_type}</div>
+            </div>
+            <div className="info-row">
+              <div className="name">CPU</div>
+              <div className="value">{data.cpu}</div>
+            </div>
+            <div className="info-row">
+              <div className="name">Camera sau</div>
+              <div className="value">{data.camera}</div>
+            </div>
+            <div className="info-row">
+              <div className="name">Camera selfie</div>
+              <div className="value">{data.camera_selfie}</div>
+            </div>
+            <div className="info-row">
+              <div className="name">Camera selfie</div>
+              <div className="value">{data.camera_selfie}</div>
             </div>
             <div className="info-row">
               <div className="name">Pin</div>
-              <div className="value">3000mAh</div>
+              <div className="value">{data.battery} mAh</div>
+            </div>
+            <div className="info-row">
+              <div className="name">Bluetooth</div>
+              <div className="value">{data.bluetooth}</div>
+            </div>
+            <div className="info-row">
+              <div className="name">Sim</div>
+              <div className="value">{data.sim}</div>
+            </div>
+            <div className="info-row">
+              <div className="name">Trọng lượng</div>
+              <div className="value">{data.weight} gram</div>
             </div>
           </div>
         </div>
