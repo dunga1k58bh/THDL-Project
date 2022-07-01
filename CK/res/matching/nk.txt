@@ -1,0 +1,18 @@
+nk;schema
+name;name
+price;price
+url;url
+image;image
+source;source
+Hệ điều hành;operating_system
+Chipset;cpu
+RAM;ram
+Bộ nhớ trong;rom
+Loại màn hình;display_tech
+Kích thước màn hình;display_size
+Độ phân giải màn hình;resolution
+Camera trước;camera_selfie
+Camera sau;camera
+Loại SIM;sim
+Bluetooth;bluetooth
+Dung lượng Pin;batery

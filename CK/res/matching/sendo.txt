@@ -1,0 +1,22 @@
+name;display_feature
+model;display_size
+price;data.price
+image;image
+short_description;camera
+rating_avg;cpu
+product_total;batery
+rating_count;operating_system
+Kết nối mạng;weight
+Loại cổng sạc;data.url
+Hãng sản xuất;name
+Bộ nhớ trong;ram
+Số SIM;sim
+Chip xử lý;data.source
+Cảm biến;cpu_type
+Công nghệ màn hình;battery
+Độ phân giải màn hình;resolution
+Camera trước;camera_selfie
+Chuẩn màn hình;rom
+Wifi;display_tech
+Dung lượng pin;bluetooth
+Jack (Input & Output);monitor_frequency

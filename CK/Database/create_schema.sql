@@ -1,8 +1,7 @@
 create table if not exists phone(
     id int primary key auto_increment,
     name varchar(255),
-    data text,
-    display_size float,
+    display_size text,
     display_tech text,
     camera text,
     camera_selfie text,
@@ -19,6 +18,13 @@ create table if not exists phone(
     cpu text,
     bluetooth text,
     image text
+);
+
+create table if not exists sources(
+    phone_id int,
+    sources varchar(255),
+    price int,
+    url text
 );
 
 insert into phone (
@@ -43,7 +49,6 @@ insert into phone (
     image)
 value (
     "iPhone 11 128GB I Chính hãng VN/A ",
-    "[{'source': 'cellphones', 'price':'10020000', 'url':'https://cellphones.com.vn/iphone-11-128gb.html '}, {'source': 'hhm', 'price':'13490000', 'url': 'https://hoanghamobile.com/dien-thoai-di-dong/iphone-11-128gb-chinh-hang-vn-a'}]",
     "6.1",
     "IPS LCD",
     "Camera kép 12MP:- Camera góc rộng: ƒ/1.8 aperture- Camera siêu rộng: ƒ/2.4 aperture",

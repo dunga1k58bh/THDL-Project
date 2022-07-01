@@ -1,0 +1,14 @@
+(('cellphones', 'name'), ('nk', 'name')):  0.6635648:
+(('cellphones', 'price'), ('nk', 'price')):  0.60489:
+(('cellphones', 'url'), ('nk', 'url')):  0.63582057:
+(('cellphones', 'display_size'), ('nk', 'Kích thước màn hình')):  0.26584083:
+(('cellphones', 'display_tech'), ('nk', 'Loại màn hình')):  0.34820762:
+(('cellphones', 'camera'), ('nk', 'Camera sau')):  0.53206605:
+(('cellphones', 'ram'), ('nk', 'RAM')):  0.76391965:
+(('cellphones', 'batery'), ('nk', 'Dung lượng Pin')):  0.26139536:
+(('cellphones', 'sim'), ('nk', 'Loại SIM')):  0.5399536:
+(('cellphones', 'os'), ('nk', 'Hệ điều hành')):  0.28750858:
+(('cellphones', 'resolution'), ('nk', 'Độ phân giải màn hình')):  0.2731346:
+(('cellphones', 'weight'), ('nk', 'WIFI')):  0.24255376:
+(('cellphones', 'chip_set'), ('nk', 'Chipset')):  0.60545844:
+(('cellphones', 'blue_tooth'), ('nk', 'Bluetooth')):  0.6607121:

@@ -1,0 +1,12 @@
+(('cellphones', 'name'), ('sendo', 'name')):  0.6392347:
+(('cellphones', 'price'), ('sendo', 'price')):  0.59226125:
+(('cellphones', 'display_tech'), ('sendo', 'Công nghệ màn hình')):  0.29483002:
+(('cellphones', 'camera'), ('sendo', 'Camera sau')):  0.4691915:
+(('cellphones', 'ram'), ('sendo', 'RAM')):  0.593614:
+(('cellphones', 'batery'), ('sendo', 'Bảo hành')):  0.215203:
+(('cellphones', 'sim'), ('sendo', 'Số SIM')):  0.5738941:
+(('cellphones', 'resolution'), ('sendo', 'short_description')):  0.25485754:
+(('cellphones', 'cpu_type'), ('sendo', 'CPU')):  0.33551556:
+(('cellphones', 'weight'), ('sendo', 'Wifi')):  0.2200265:
+(('cellphones', 'chip_set'), ('sendo', 'Chipset')):  0.5290234:
+(('cellphones', 'blue_tooth'), ('sendo', 'Bluetooth')):  0.6042215:

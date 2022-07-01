@@ -1,1 +1,3 @@
 name; price; url; Kích thước màn hình; Công nghệ màn hình; Camera sau; Camera trước; Chipset; Dung lượng RAM; Bộ nhớ trong; Pin; Thẻ SIM; Hệ điều hành; Độ phân giải màn hình; Tính năng màn hình; Loại CPU; Trọng lượng; Bluetooth; Tần số quét
+
+name,price,url,image,Model,Màu sắc,Nhà sản xuất,Xuất xứ,Năm ra mắt ,Thời gian bảo hành,Địa điểm bảo hành,Hệ điều hành,Chipset,RAM,Bộ nhớ trong,Hỗ trợ thẻ nhớ ngoài,Cảm ứng,Loại màn hình,Kích thước màn hình,Độ phân giải màn hình,Camera trước,Camera sau,Đèn Flash,Video,Mạng 4G,Loại SIM,WIFI,Bluetooth,GPS,USB,Jack 3.5mm,Dung lượng Pin,Mở khóa nhanh,Thiết kế,Ghi âm,Radio,Màn hình tràn viền,Tiện ích khác ĐTDĐ,Kích thước sản phẩm

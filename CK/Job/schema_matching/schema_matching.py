@@ -9,14 +9,17 @@ from valentine.data_sources import DataframeTable
 # nltk.download('omw-1.4')
 
 path = "../../res"
+out_path = "matching"
+
 d1_path = os.path.join(path, "cellphones.csv")
-d2_path = os.path.join(path, "tgdd.csv")
+d2_path = os.path.join(path, "sendo.csv")
+
 
 df1 = pd.read_csv(d1_path, sep = ";")
 df2 = pd.read_csv(d2_path, sep = ";")
 
 d1 = DataframeTable(df1, "cellphones")
-d2 = DataframeTable(df2, "tgdd")
+d2 = DataframeTable(df2, "sendo")
 
 print(d1)
 print(d2)

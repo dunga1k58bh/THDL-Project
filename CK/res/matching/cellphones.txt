@@ -1,8 +1,8 @@
 cellphones;schema
 name;name
-price;data.price
-url;data.url
-source;data.source
+price;price
+url;url
+source;source
 display_size;display_size
 display_tech;display_tech
 camera;camera
