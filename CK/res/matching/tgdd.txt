@@ -1,0 +1,13 @@
+tgdd;schema
+name;name
+price;price
+source;source
+display;display_tech
+operating_system;operating_system
+camera;camera
+camera_selfie;camera_selfie
+chip;cpu
+ram;ram
+rom;rom
+sim;sim
+battery;battery

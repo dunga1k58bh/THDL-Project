@@ -1,5 +1,5 @@
-create table if not exists phone(
-    id int primary key auto_increment,
+create table if not exists phones(
+    id int,
     name varchar(255),
     display_size text,
     display_tech text,
@@ -7,7 +7,7 @@ create table if not exists phone(
     camera_selfie text,
     ram int,
     rom int,
-    battery int,
+    battery varchar(255),
     sim text,
     operating_system text,
     resolution text,
@@ -22,7 +22,7 @@ create table if not exists phone(
 
 create table if not exists sources(
     phone_id int,
-    sources varchar(255),
+    source varchar(255),
     price int,
     url text
 );
