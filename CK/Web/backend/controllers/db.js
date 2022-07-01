@@ -7,6 +7,20 @@ const knex = require('knex')({
         password : 'nguyentheduc',
         database : 'phone'
       },
+      log: {
+        warn(message) {
+          console.log(message);
+        },
+        error(message) {
+          console.log(message);
+        },
+        deprecate(message) {
+          console.log(message);
+        },
+        debug(message) {
+          console.log(message);
+        },
+      }
 });
 
 const { attachPaginate } = require('knex-paginate');
