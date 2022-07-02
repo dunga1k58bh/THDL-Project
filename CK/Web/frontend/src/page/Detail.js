@@ -14,24 +14,18 @@ import Paper from "@mui/material/Paper";
 import { useNavigate,useParams } from "react-router-dom";
 import * as axios from "axios";
 
-const rows = [
-  {
-    name: "Thế giới di động",
-    price: 2000000,
-  },
-  {
-    name: "Sendo",
-    price: 2000000,
-  },
-];
-
 function Detail() {
   const navigate = useNavigate();
   const {id} = useParams();
   const [data, setData] = useState({})
+  const [row, setRow] = useState([])
   useEffect(() => {
     axios.get(`http://localhost:3001/phone/${id}`).then((res) => {
       setData(res.data.result);
+      console.log(res.data.result);
+    });
+    axios.get(`http://localhost:3001/compare/${id}`).then((res) => {
+      setRow(res.data.result);
       console.log(res.data.result);
     });
   },[])
@@ -48,20 +42,20 @@ function Detail() {
         </div>
         <div className="product">
           <div className="image">
-            <img className="img" src={data.image} alt=""></img>
+            <img className="img" src={data.image || Images.noImage} alt=""></img>
           </div>
           <div className="info">
             <div className="info-row">
               <div className="name">Hệ điều hành</div>
-              <div className="value">{data.operating_system}</div>
+              <div className="value">{data.operating_system || "Không rõ"}</div>
             </div>
             <div className="info-row">
               <div className="name">RAM</div>
-              <div className="value">{data.ram} GB</div>
+              <div className="value">{data.ram || "Null"} GB</div>
             </div>
             <div className="info-row">
               <div className="name">ROM</div>
-              <div className="value">{data.rom} GB</div>
+              <div className="value">{data.rom || "Null"} GB</div>
             </div>
             <div className="info-row">
               <div className="name">Loại màn hình</div>
@@ -69,7 +63,7 @@ function Detail() {
             </div>
             <div className="info-row">
               <div className="name">Kích thước màn hình</div>
-              <div className="value">{data.display_size} inch</div>
+              <div className="value">{data.display_size || "Null"} inch</div>
             </div>
             <div className="info-row">
               <div className="name">Độ phân giải</div>
@@ -77,7 +71,7 @@ function Detail() {
             </div>
             <div className="info-row">
               <div className="name">Tần số quét</div>
-              <div className="value">{data.monitor_frequency} Hz</div>
+              <div className="value">{data.monitor_frequency || "Null"} Hz</div>
             </div>
             <div className="info-row">
               <div className="name">Loại CPU</div>
@@ -101,7 +95,7 @@ function Detail() {
             </div>
             <div className="info-row">
               <div className="name">Pin</div>
-              <div className="value">{data.battery} mAh</div>
+              <div className="value">{data.battery || "Null"} mAh</div>
             </div>
             <div className="info-row">
               <div className="name">Bluetooth</div>
@@ -113,7 +107,7 @@ function Detail() {
             </div>
             <div className="info-row">
               <div className="name">Trọng lượng</div>
-              <div className="value">{data.weight} gram</div>
+              <div className="value">{data.weight || "Null"} gram</div>
             </div>
           </div>
         </div>
@@ -129,18 +123,20 @@ function Detail() {
                   <TableRow>
                     <TableCell>Cửa hàng</TableCell>
                     <TableCell>Giá</TableCell>
+                    <TableCell>Url</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {rows.map((row) => (
+                  {row.map((row) => (
                     <TableRow
-                      key={row.name}
+                      key={row.source}
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell component="th" scope="row">
-                        {row.name}
+                        {row.source}
                       </TableCell>
                       <TableCell>{row.price}</TableCell>
+                      <TableCell><a href={row.url} target="_blank">{row.url}</a></TableCell>
                     </TableRow>
                   ))}
                 </TableBody>

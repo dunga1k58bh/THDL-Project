@@ -1,7 +1,7 @@
 const knex = require("./db");
 async function getProductList(req, res) {
   try {
-    let page = req.body.page || 1;
+    let page = Number(req.body.page) || 1;
     let perpage = req.body.perpage || 8;
     // let query = knex("phone");
     // if (req.body.ram?.length) {
@@ -16,7 +16,7 @@ async function getProductList(req, res) {
     // if (req.body.display_size?.length) {
     //   query = query.whereIn("display_size", req.body.display_size);
     // }
-    let productList = await knex("phone")
+    let productList = await knex("phones")
       .modify(function (query) {
         if (req.body.ram?.length) {
             query.whereIn("ram", req.body.ram);
@@ -29,6 +29,9 @@ async function getProductList(req, res) {
           }
           if (req.body.display_size?.length) {
             query.whereIn("display_size", req.body.display_size);
+          }
+          if (req.body.hasImage) {
+            query.whereNot("image", null);
           }
       })
       .whereLike("name", `%${req.body.searchValue || ""}%`)
@@ -50,7 +53,7 @@ async function getProductList(req, res) {
 async function getProduct(req, res) {
   try {
     const id = parseInt(req.params.id);
-    let product = await knex("phone").where("id", id).first();
+    let product = await knex("phones").where("id", id).first();
 
     return res.status(200).json({
       success: true,
@@ -79,37 +82,37 @@ async function getFilter(req, res) {
       resolution,
       cpu_type,
     ] = await Promise.all([
-      knex("phone").groupBy("ram").orderBy("ram", "desc").select("ram"),
-      knex("phone").groupBy("rom").orderBy("rom", "desc").select("rom"),
-      knex("phone")
+      knex("phones").groupBy("ram").orderBy("ram", "desc").select("ram"),
+      knex("phones").groupBy("rom").orderBy("rom", "desc").select("rom"),
+      knex("phones")
         .groupBy("battery")
         .orderBy("battery", "desc")
         .select("battery"),
-      knex("phone")
+      knex("phones")
         .groupBy("display_size")
         .orderBy("display_size", "desc")
         .select("display_size"),
-      knex("phone")
+      knex("phones")
         .groupBy("display_tech")
         .orderBy("display_tech", "desc")
         .select("display_tech"),
-      knex("phone")
+      knex("phones")
         .groupBy("camera")
         .orderBy("camera", "desc")
         .select("camera"),
-      knex("phone")
+      knex("phones")
         .groupBy("camera_selfie")
         .orderBy("camera_selfie", "desc")
         .select("camera_selfie"),
-      knex("phone")
+      knex("phones")
         .groupBy("operating_system")
         .orderBy("operating_system", "desc")
         .select("operating_system"),
-      knex("phone")
+      knex("phones")
         .groupBy("resolution")
         .orderBy("resolution", "desc")
         .select("resolution"),
-      knex("phone")
+      knex("phones")
         .groupBy("cpu_type")
         .orderBy("cpu_type", "desc")
         .select("cpu_type"),
@@ -117,9 +120,9 @@ async function getFilter(req, res) {
     return res.status(200).json({
       success: true,
       result: {
-        ram: ram.map((i) => i.ram),
-        rom: rom.map((i) => i.rom),
-        battery: battery.map((i) => i.battery),
+        ram: ram.map((i) => i.ram).filter((i) => i !== null && i <= 16).sort((a,b) => a > b),
+        rom: rom.map((i) => i.rom).filter((i) => i !== null && i <= 512).sort((a,b) => a > b),
+        battery: battery.map((i) => i.battery).filter((i) => i !== null && i <= 10000 && i >= 500).sort((a,b) => Number(a) > Number(b)),
         display_size: display_size.map((i) => i.display_size),
         display_tech: display_tech.map((i) => i.display_tech),
         camera: camera.map((i) => i.camera),
@@ -138,8 +141,28 @@ async function getFilter(req, res) {
   }
 }
 
+async function getCompare(req, res) {
+  try {
+    const id = parseInt(req.params.id);
+    let product = await knex("sources").where("phone_id", id);
+
+    return res.status(200).json({
+      success: true,
+      result: product,
+    });
+  } catch (error) {
+    console.log(error);
+    return res.status(500).json({
+      success: false,
+      message: error,
+    });
+  }
+}
+
+
 module.exports = {
   getProductList: getProductList,
   getProduct: getProduct,
   getFilter: getFilter,
+  getCompare: getCompare
 };
