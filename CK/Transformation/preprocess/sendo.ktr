@@ -1,11 +1,11 @@
 <transformation>
   <info>
-    <name>Transformation 1</name>
+    <name>sendo</name>
     <description/>
     <extended_description/>
     <trans_version/>
     <trans_type>Normal</trans_type>
-    <directory>/</directory>
+    <directory>/Transformation/preprocess</directory>
     <parameters>
     </parameters>
     <log>
@@ -426,10 +426,10 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2022/06/25 12:25:23.651</created_date>
+    <created_date>2022/07/02 16:10:20.968</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2022/06/28 15:08:38.101</modified_date>
-    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <modified_date>2022/07/02 16:15:50.510</modified_date>
+    <key_for_session_key/>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -462,7 +462,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>${project_path}/res/sendo.csv</filename>
+    <filename>${project_path}/Job/crawl/data/sendo.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -484,7 +484,7 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>105</length>
+        <length>43</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -983,6 +983,204 @@
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
+      <field>
+        <name>display_feature</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>143</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>os</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>143</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>weight</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>72</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>front_camera</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>67</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>source</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>resolution</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>144</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>blue_tooth</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>38</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>url</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>69</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>chip_set</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>46</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>rom</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>138</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>hz</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>17</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>display_tech</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>211</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>sim</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>64</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>cpu_type</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>87</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>display_size</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>24</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>camera</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>223</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ram</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>48</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>batery</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>138</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -993,7 +1191,336 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>144</xloc>
+      <xloc>176</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>name</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Unique rows</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <count_rows>N</count_rows>
+    <count_field/>
+    <reject_duplicate_row>N</reject_duplicate_row>
+    <error_description/>
+    <fields>
+      <field>
+        <name>name</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>model</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>price</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>image</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>short_description</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>rating_avg</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>response_time</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>product_total</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>quantity</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>rating_count</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Kết nối mạng</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Tính năng nổi trội</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Xuất xứ</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Loại cổng sạc</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Hãng sản xuất</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Kích thước màn hình</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Bộ nhớ trong</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Bảo hành</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>RAM</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Số SIM</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Phương thức bảo hành</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Nơi bảo hành</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Chip xử lý</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Chipset</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Thẻ nhớ ngoài</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Cảm biến</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Hệ điều hành</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Hỗ trợ thẻ nhớ tối đa</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Camera sau</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Chất liệu</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Khả năng chống nước</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Trọng lượng</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Công nghệ màn hình</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Độ phân giải màn hình</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Chip đồ họa (GPU)</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Camera trước</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Chuẩn màn hình</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Wifi</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Kích thước</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Dung lượng pin</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Jack (Input &amp; Output)</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>CPU</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Loại SIM</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Bluetooth</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Model iPhone</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>Danh bạ lưu trữ</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>display_feature</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>os</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>weight</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>front_camera</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>source</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>resolution</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>blue_tooth</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>url</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>chip_set</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>rom</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>hz</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>display_tech</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>sim</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>cpu_type</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>display_size</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>camera</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>ram_1</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>batery</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1023,9 +1550,9 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${project_path}/res/sendo.csv</name>
+      <name>${project_path}/res/sendo</name>
       <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
       <extention>csv</extention>
       <append>N</append>
       <split>N</split>
@@ -1049,19 +1576,7 @@
         <group/>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>105</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>model</name>
-        <type>Boolean</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
+        <length>43</length>
         <precision>-1</precision>
       </field>
       <field>
@@ -1604,79 +2119,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>448</xloc>
-      <yloc>192</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sort rows</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>name</name>
-        <ascending>N</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>240</xloc>
-      <yloc>192</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Unique rows</name>
-    <type>Unique</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <count_rows>N</count_rows>
-    <count_field/>
-    <reject_duplicate_row>N</reject_duplicate_row>
-    <error_description/>
-    <fields>      </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>336</xloc>
+      <xloc>512</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>

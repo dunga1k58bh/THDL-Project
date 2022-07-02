@@ -9,7 +9,7 @@ from valentine.data_sources import DataframeTable
 # nltk.download('omw-1.4')
 
 path = "../../res"
-out_path = "matching"
+out_path = "data_valentine"
 
 d1_path = os.path.join(path, "cellphones.csv")
 d2_path = os.path.join(path, "sendo.csv")
