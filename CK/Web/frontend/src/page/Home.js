@@ -49,12 +49,12 @@ function Home() {
       page
     };
     setLoading(true)
-    axios.post("http://localhost:3001/phone", filter).then((res) => {
+    axios.post("http://20.212.104.107:3001/phone", filter).then((res) => {
       setData(res.data.result.data);
       setTotalPage(res.data.result.pagination.lastPage);
       setLoading(false)
     });
-    axios.get("http://localhost:3001/filter").then((res) => {
+    axios.get("http://20.212.104.107:3001/filter").then((res) => {
       const data = res.data.result;
       setFilterOption(data);
       if (selectedRam.length !== data.ram?.length) {

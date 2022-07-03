@@ -20,11 +20,11 @@ function Detail() {
   const [data, setData] = useState({})
   const [row, setRow] = useState([])
   useEffect(() => {
-    axios.get(`http://localhost:3001/phone/${id}`).then((res) => {
+    axios.get(`http://20.212.104.107:3001/phone/${id}`).then((res) => {
       setData(res.data.result);
       console.log(res.data.result);
     });
-    axios.get(`http://localhost:3001/compare/${id}`).then((res) => {
+    axios.get(`http://20.212.104.107:3001/compare/${id}`).then((res) => {
       setRow(res.data.result);
       console.log(res.data.result);
     });
