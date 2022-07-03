@@ -93,7 +93,7 @@ function Home() {
       hasImage,
       page: 1
     };
-    axios.post("http://localhost:3001/phone", filter).then((res) => {
+    axios.post("http://20.212.104.107:3001/phone", filter).then((res) => {
       dispatch(updateState({ page: 1 }));
       setData(res.data.result.data);
       setTotalPage(res.data.result.pagination.lastPage);
